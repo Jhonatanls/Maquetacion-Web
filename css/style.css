@@ -1,3 +1,4 @@
+/* Fuentes */
 @font-face {
     font-family: "nevis";
     src: url("../css/fonts/nevis.eot");
@@ -9,6 +10,7 @@
     font-style: normal;
 }
 
+/* ESTILOS DE TODA LA PÁGINA */
 *{
     padding: 0px;
     margin: 0px;
@@ -17,6 +19,8 @@
 body{
     background-image: url(../img/paven.png);
 }
+
+/* PARTE DE ARRIBA */
 
 #header{
     min-width: 1024px;
@@ -63,4 +67,77 @@ body{
 
 #header h1 a {
     color: #70b231;
+}
+
+/* BARRA NAVEGACIÓN */
+#barra-navegacion{
+    width: 100%;
+    background: #333333;
+    color: aliceblue;
+    height: 40px;
+    font-family: sans-serif, Helvetica, Arial;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
+}
+
+#barra-navegacion ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 1090px;
+}
+
+#barra-navegacion > ul > li{
+    line-height: 40px;
+    float: left;
+    border-right: 1px solid gray;
+    transition: all 300ms;
+}
+
+#barra-navegacion > ul > li a{
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#barra-navegacion > ul > li > a:first-child{
+    border-left: 1px solid gray;
+}
+
+#barra-navegacion > ul > li:hover{
+    background-color: #70b231;
+    box-shadow: 0px 0px 4px green inset;
+}
+
+/* DESPLEGABLES BARRA NAV*/
+#barra-navegacion > ul > li > ul{
+    display: none;
+    position: absolute;
+    width: 160px;
+    box-shadow: 0px 2px 2px gray;
+    z-index: 1;
+}
+
+#barra-navegacion > ul > li:hover > ul{
+    display: block;
+}
+
+#barra-navegacion > ul > li:hover > ul > li{
+    background-color: #F2F1F0;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 8px;
+    line-height: 25px;
+    font-size: 13px;
+    transition: all 300ms;
+}
+
+#barra-navegacion > ul > li:hover > ul > li a{
+    color: #666666;
+}
+
+#barra-navegacion > ul > li:hover > ul > li:hover{
+    box-shadow: 0px 0px 2px #ccc inset;
+    background: rgb(238,237,237);
 }
