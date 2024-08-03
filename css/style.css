@@ -141,3 +141,156 @@ body{
     box-shadow: 0px 0px 2px #ccc inset;
     background: rgb(238,237,237);
 }
+
+/* Contenido*/
+#content{
+    width: 1250px;
+    min-height: 1100px;
+    margin: 0px auto;
+}
+
+/* BARRA LATERAL*/
+#barra-lateral, #frase{
+    clear: both;
+    width: 200px;
+    float: left;
+    margin: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+#frase{
+    width: 180px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+#barra-lateral .widget{
+    display: block;
+    width: 180px;
+    margin: 5px auto;
+    padding: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    border-bottom: 1px dashed #333333;
+}
+
+#barra-lateral .widget:last-child{
+    margin-bottom: 10px;
+}
+
+#barra-lateral h3, #frase h3{
+    display: block;
+    width: 100%;
+    color: #333333;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background: #f2f3f2;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 15px;
+}
+
+/* Formularios */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select{
+    border: 1px solid #c9c9c9;
+    box-shadow: 0px 0px 2px #ccc inset;
+    background: white;
+    padding: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: gray;
+    transition: all 300ms;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus{
+    border: 1px solid #70b231;
+    color: black;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button{
+    display: block;
+    border-radius: 2px;
+    border: 1px solid green;
+    cursor: pointer;
+    width: 60px;
+    padding: 3px;
+    background-color: #70b231;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover{
+    box-shadow: 0px 0px 2px gray;
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active{
+    box-shadow: 0px 0px 3px gray inset;
+        text-shadow: 0px 0px 1px #ccc;
+}
+
+
+/* Formularios barra lateral*/
+#barra-lateral div label,
+#barra-lateral div input[type="text"],
+#barra-lateral div input[type="email"],
+#barra-lateral div input[type="password"]
+#barra-lateral div a{
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#barra-lateral div input[type="botton"],
+#barra-lateral div input[type="submit"],
+#barra-lateral div input[type="reset"],
+#barra-lateral div button{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#barra-lateral input,
+#barra-lateral label{
+    margin: 0px auto;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: #529215;
+}
+
+a:visited{
+    color: #529215;
+}
+
+a:hover{
+    color: #285616;
+}
+
+#barra-lateral li{
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    list-style: square;
+}
